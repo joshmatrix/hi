@@ -1038,12 +1038,14 @@ body {
 
 .letter {
     background: linear-gradient(135deg, #fff0f5 0%, #ffe5f1 100%);
-    padding: 80px;
-    border-radius: 30px;
-    max-width: 950px;
-    width: 92%;
+    padding: 50px 45px;
+    border-radius: 25px;
+    max-width: 650px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    border: 5px solid #ffb6d9;
+    border: 4px solid #ffb6d9;
     position: relative;
     transform: scale(0.8);
     transition: transform 0.3s ease;
@@ -1057,15 +1059,15 @@ body {
 
 .close-btn {
     position: absolute;
-    top: 25px;
-    right: 25px;
+    top: 15px;
+    right: 15px;
     background: #ff69b4;
     color: white;
     border: none;
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -1083,27 +1085,27 @@ body {
 
 .letter h2 {
     color: #ff69b4;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 2.2rem;
 }
 
 .letter p {
     color: #555;
-    line-height: 2.2;
-    margin-bottom: 25px;
-    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
     text-align: justify;
-    text-indent: 50px;
+    text-indent: 35px;
 }
 
 .letter .signature {
     text-align: right;
     font-style: italic;
     color: #ff69b4;
-    margin-top: 45px;
+    margin-top: 30px;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 /* Responsive Design */
