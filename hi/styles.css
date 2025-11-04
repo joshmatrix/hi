@@ -1097,13 +1097,97 @@ body {
 }
 
 /* Responsive Design */
+/* Mobile Responsive Styles */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .container {
+        padding: 10px;
+        max-width: 100%;
+    }
+    
     .title {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+        padding: 15px 10px;
+        text-align: center;
     }
     
     .message {
         font-size: 1.1rem;
+    }
+    
+    /* Reduce balloon size for mobile */
+    .balloon {
+        font-size: 2.5rem;
+    }
+    
+    /* Adjust left heart size for mobile */
+    .left-heart {
+        font-size: 4rem;
+        left: 1%;
+    }
+    
+    /* Make the interactive heart smaller */
+    .big-heart {
+        font-size: 5rem;
+    }
+    
+    .heart-note {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+    
+    /* Adjust sparkles around heart */
+    .sparkle {
+        font-size: 1.5rem;
+    }
+    
+    /* Letter container adjustments */
+    .letter {
+        width: 90%;
+        max-width: 90vw;
+        padding: 25px 20px;
+        max-height: 85vh;
+        overflow-y: auto;
+    }
+    
+    .letter h2 {
+        font-size: 1.5rem;
+    }
+    
+    .letter p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .close-btn {
+        font-size: 1.5rem;
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* Reduce confetti size */
+    .confetti {
+        width: 6px;
+        height: 15px;
+    }
+    
+    /* Reduce sprinkle size */
+    .sprinkle {
+        width: 4px;
+        height: 15px;
+    }
+    
+    /* Adjust floating messages for mobile */
+    .floating-text {
+        font-size: 1rem;
+        padding: 8px 12px;
+        max-width: 80%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     
     .cake {
@@ -1121,8 +1205,62 @@ body {
     .layer-bottom {
         width: 210px;
     }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+        padding: 12px 8px;
+    }
     
     .balloon {
+        font-size: 2rem;
+    }
+    
+    .left-heart {
         font-size: 3rem;
+    }
+    
+    .big-heart {
+        font-size: 4rem;
+    }
+    
+    .heart-note {
+        font-size: 0.8rem;
+    }
+    
+    .sparkle {
+        font-size: 1.2rem;
+    }
+    
+    .letter {
+        width: 95%;
+        padding: 20px 15px;
+    }
+    
+    .letter h2 {
+        font-size: 1.3rem;
+    }
+    
+    .letter p {
+        font-size: 0.85rem;
+    }
+    
+    .floating-text {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+    
+    /* Hide some balloons on very small screens to reduce clutter */
+    .balloon-11, .balloon-12, .balloon-13, .balloon-14, .balloon-15,
+    .balloon-16, .balloon-17, .balloon-18, .balloon-19, .balloon-20 {
+        display: none;
+    }
+    
+    /* Reduce number of confetti and sprinkles */
+    .confetti:nth-child(n+16), 
+    .sprinkle:nth-child(n+16) {
+        display: none;
     }
 }
