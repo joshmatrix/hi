@@ -1097,10 +1097,36 @@ body {
 }
 
 /* Responsive Design */
+/* Tablet Devices */
+@media (max-width: 1024px) {
+    .title {
+        font-size: 2.8rem;
+    }
+    
+    .big-heart {
+        font-size: 12rem;
+    }
+    
+    .left-heart {
+        font-size: 6rem;
+    }
+    
+    .content {
+        padding: 40px 30px;
+    }
+    
+    .letter {
+        padding: 60px 40px;
+        max-width: 85%;
+    }
+}
+
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
+        align-items: flex-start;
+        padding-top: 20px;
     }
     
     .container {
@@ -1108,14 +1134,27 @@ body {
         max-width: 100%;
     }
     
+    .content {
+        padding: 30px 20px;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    
     .title {
-        font-size: 1.8rem;
-        padding: 15px 10px;
+        font-size: 2rem;
+        padding: 10px;
         text-align: center;
+        line-height: 1.3;
     }
     
     .message {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 20px 0;
+    }
+    
+    .wishes p {
+        font-size: 1rem;
     }
     
     /* Reduce balloon size for mobile */
@@ -1130,13 +1169,20 @@ body {
     }
     
     /* Make the interactive heart smaller */
+    .heart-container {
+        width: 200px;
+        height: 200px;
+        margin: 30px auto;
+    }
+    
     .big-heart {
-        font-size: 5rem;
+        font-size: 8rem;
     }
     
     .heart-note {
-        font-size: 0.9rem;
-        padding: 0 10px;
+        font-size: 1rem;
+        padding: 0 15px;
+        margin-top: -10px;
     }
     
     /* Adjust sparkles around heart */
@@ -1144,28 +1190,46 @@ body {
         font-size: 1.5rem;
     }
     
+    /* Button adjustments */
+    .celebrate-btn {
+        padding: 15px 35px;
+        font-size: 1.1rem;
+        margin-top: 20px;
+    }
+    
     /* Letter container adjustments */
     .letter {
-        width: 90%;
-        max-width: 90vw;
-        padding: 25px 20px;
+        width: 92%;
+        max-width: 95vw;
+        padding: 40px 25px;
         max-height: 85vh;
         overflow-y: auto;
+        border-radius: 20px;
     }
     
     .letter h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        margin-bottom: 25px;
     }
     
     .letter p {
-        font-size: 0.95rem;
-        line-height: 1.6;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        text-indent: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .letter .signature {
+        font-size: 1.2rem;
+        margin-top: 30px;
     }
     
     .close-btn {
-        font-size: 1.5rem;
-        width: 35px;
-        height: 35px;
+        font-size: 1.8rem;
+        width: 45px;
+        height: 45px;
+        top: 15px;
+        right: 15px;
     }
     
     /* Reduce confetti size */
@@ -1176,42 +1240,38 @@ body {
     
     /* Reduce sprinkle size */
     .sprinkle {
-        width: 4px;
+        width: 5px;
         height: 15px;
     }
     
     /* Adjust floating messages for mobile */
     .floating-text {
-        font-size: 1rem;
-        padding: 8px 12px;
-        max-width: 80%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    
-    .cake {
-        width: 210px;
-    }
-    
-    .layer-top {
-        width: 150px;
-    }
-    
-    .layer-middle {
-        width: 180px;
-    }
-    
-    .layer-bottom {
-        width: 210px;
+        font-size: 1.3rem;
+        max-width: 90%;
     }
 }
 
 /* Extra small mobile devices */
 @media (max-width: 480px) {
+    .content {
+        padding: 25px 15px;
+        margin: 5px;
+        border-radius: 15px;
+    }
+    
     .title {
-        font-size: 1.5rem;
-        padding: 12px 8px;
+        font-size: 1.6rem;
+        padding: 8px;
+    }
+    
+    .message {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .wishes p {
+        font-size: 0.9rem;
+        margin: 8px 0;
     }
     
     .balloon {
@@ -1220,47 +1280,128 @@ body {
     
     .left-heart {
         font-size: 3rem;
+        left: 0.5%;
+    }
+    
+    .heart-container {
+        width: 150px;
+        height: 150px;
+        margin: 20px auto;
     }
     
     .big-heart {
-        font-size: 4rem;
+        font-size: 6rem;
     }
     
     .heart-note {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
+        padding: 0 10px;
     }
     
     .sparkle {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+    
+    .celebrate-btn {
+        padding: 12px 30px;
+        font-size: 1rem;
     }
     
     .letter {
         width: 95%;
-        padding: 20px 15px;
+        padding: 30px 20px;
+        border-radius: 15px;
     }
     
     .letter h2 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
     }
     
     .letter p {
-        font-size: 0.85rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        text-indent: 20px;
+    }
+    
+    .letter .signature {
+        font-size: 1rem;
+        margin-top: 25px;
+    }
+    
+    .close-btn {
+        font-size: 1.5rem;
+        width: 38px;
+        height: 38px;
+        top: 10px;
+        right: 10px;
     }
     
     .floating-text {
-        font-size: 0.85rem;
+        font-size: 1rem;
         padding: 6px 10px;
     }
     
     /* Hide some balloons on very small screens to reduce clutter */
     .balloon-11, .balloon-12, .balloon-13, .balloon-14, .balloon-15,
-    .balloon-16, .balloon-17, .balloon-18, .balloon-19, .balloon-20 {
+    .balloon-16, .balloon-17, .balloon-18, .balloon-19, .balloon-20,
+    .balloon-21, .balloon-22, .balloon-23, .balloon-24, .balloon-25 {
         display: none;
     }
     
-    /* Reduce number of confetti and sprinkles */
-    .confetti:nth-child(n+16), 
+    /* Reduce number of confetti */
+    .confetti:nth-child(n+16) {
+        display: none;
+    }
+    
+    /* Reduce number of sprinkles */
     .sprinkle:nth-child(n+16) {
         display: none;
+    }
+}
+
+/* Landscape mode optimization for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    body {
+        padding-top: 10px;
+    }
+    
+    .content {
+        padding: 20px 25px;
+        margin: 5px;
+    }
+    
+    .title {
+        font-size: 1.8rem;
+    }
+    
+    .heart-container {
+        width: 150px;
+        height: 150px;
+        margin: 15px auto;
+    }
+    
+    .big-heart {
+        font-size: 6rem;
+    }
+    
+    .message {
+        font-size: 0.9rem;
+        margin: 15px 0;
+    }
+    
+    .letter {
+        max-height: 90vh;
+        padding: 25px 20px;
+    }
+    
+    .letter h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .letter p {
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
 }
